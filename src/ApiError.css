@@ -1,0 +1,26 @@
+.apiError {
+    margin-left: 50px;
+}
+
+.apiErrorMessageHeading {
+    color:black;
+}
+
+.apiErrorMessage {
+    color: rgb(99, 95, 95);
+    font-weight: 400;
+}
+
+.apiErrorResetButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+
+.apiResetButton {
+    margin-right: 5px;
+    background-color: indianred;
+    width: 100px;
+    color:white;
+    height: 2rem
+}

@@ -1,0 +1,20 @@
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 50px
+}
+
+.aboutHeader {
+    max-width: 600px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.titleSpan {
+    color:red;
+    font-style:italic
+
+}

@@ -1,0 +1,68 @@
+.paperlistContainer {
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.title {
+    font-weight: 700
+}
+
+.journal {
+    text-transform: capitalize;
+    font-style: italic;
+    color: red
+}
+
+.paperDisplay {
+    margin: 0 0 0 20px
+}
+
+.customDateMessage {
+    text-align: center;
+    font-style: bold;
+    color: rgb(134,204,45);
+}
+
+.dateHeading {
+    text-align: center;
+    margin: 15px 50px 0 50px;
+}
+
+
+@media screen and (max-width: 620px) {
+    .dateHeading {
+        margin: 15px 20px 0 20px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .dateHeading {
+        font-size: 1.5rem;
+    }
+}
+
+.noPapers {
+    text-align: center;
+    margin:10px 20px;
+    font-size: 1.15rem; 
+    font-style: italic;
+    font-weight: 400;
+}
+
+@media (max-width: 720px) {
+    .noPapers {
+        text-align: justify;
+    }
+}
+
+
+
+.totalpapers{
+    text-align: center;
+    color: steelblue;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top:0;
+    margin-bottom: 10px
+}

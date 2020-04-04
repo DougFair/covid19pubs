@@ -1,0 +1,139 @@
+.dateInput {
+    background-color:rgb(173, 2, 36);
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    padding: 0;
+    font-family: Arial;
+    flex-wrap: wrap;
+    border: 1px solid lightgrey
+}
+
+.column {
+    display: inline-flex;
+    margin: 0 5px;
+    padding: 0
+}
+
+.inputLabel {
+    margin: 5px 0 5px 0
+}
+
+.searchTitle {
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-start;
+    color: white
+}
+
+.dateInputForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 2px;
+}
+
+.inputUnit {
+    display:flex;
+     align-items:center;
+}
+
+.inputUnits {
+    display: flex;
+    flex-direction: row;
+}
+
+.dateInputButton {
+    height: 1.4rem;
+    background-color: lightgrey;
+    justify-content: center;
+    border: 1px solid black
+}
+
+.titleInstruct{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.titleInstruct p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 0.7rem; 
+    font-family: arial;
+    padding: 0
+}
+
+
+.subDateInput {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.dropdown {
+    margin-left: 1%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dropdownMenu {
+    margin-bottom: 4px
+}
+
+.instituteFormTitle {
+    margin: 2px;
+}
+
+@media (max-width: 720px) {
+    .dateInput {
+        justify-content: center;
+    }
+    .dropdownMenu {
+        margin-bottom: 0
+    }
+    .dateInputForm {
+        margin-top: 0;
+    }
+    .dropdown {
+        margin-top: 2px;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 440px) {
+    .column {
+        margin: 2px
+    }
+    .dateForm {
+        width: 100px
+    }
+}
+
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;       
+   height: 1.5rem;
+   border-radius: 0;
+   background-color: white;
+   font-family: helvetica;
+   width:250px;
+   max-width:100%;
+   background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+   background-repeat: no-repeat, repeat;
+   background-position: right .7em top 50%, 0 0;
+   background-size: .65em auto, 100%; 
+   margin: 0;
+   padding-left: 5px;
+} 
+
+select::-ms-expand {
+    display: none; 
+}
