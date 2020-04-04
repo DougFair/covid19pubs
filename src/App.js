@@ -12,8 +12,6 @@ import ResetButton from "./ResetButton"
 import Stats from "./Stats"
 import ResetCountryButton from "./ResetCountryButton"
 import ApiError from "./ApiError"
-import Contact from './Contact'
-import About from './About'
 import rateLimit from 'axios-rate-limit';
 
 const http = rateLimit(axios.create(), {
@@ -44,15 +42,10 @@ class App extends Component {
   }
 
 componentDidMount () {
-  console.log("mount")
     axios.get("https://coronavirus-19-api.herokuapp.com/all ")
     .then(response => this.setState({loading: true, worldStats: response.data}) )
     
     this.getIdList()
-}
-
-componentDidUpdate () {
-  console.log("update")
 }
 
 dateInput = (date1, date2) => {
@@ -390,14 +383,6 @@ apiReset = () => {
             </>
             } 
           />
-           <Route exact path="/about" render= {() => 
-              <About />
-            }
-            />
-            <Route exact path="/contact" render= {() => 
-              <Contact />
-            }
-            />
         </Switch>
       </div>
 
