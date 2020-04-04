@@ -101,8 +101,9 @@ this.setState({idlist:[], idlistWeek:[], idlistInputedDate:[], papersList:[], pa
   const textwordEncoded = encodeURIComponent(textwordUnencoded)
   
 
-  const url =  `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=10000&term=${textwordEncoded}${dateParamsEncoded}`
-  const url2 =  `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=10000&term=${textwordEncoded}${dateParamsEncoded2}`
+  const url =  `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=10000&term=${textwordEncoded}${dateParamsEncoded}&api_key=${process.env.REACT_APP_PUBMED_API_KEY}`
+
+  const url2 =  `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=10000&term=${textwordEncoded}${dateParamsEncoded2}&api_key=${process.env.REACT_APP_PUBMED_API_KEY}`
 
 
   if (!this.state.inputedDate1) {
